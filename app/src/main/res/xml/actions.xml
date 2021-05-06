@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actions>
+    <action intentName="actions.intent.OPEN_APP_FEATURE">
+
+        <parameter name="feature">
+            <entity-set-reference entitySetId="FeatureEntitySet" />
+        </parameter>
+
+        <fulfillment urlTemplate="{@url}" />
+        <!-- Fallback fulfillment with no required parameters -->
+        <fulfillment urlTemplate="https://mi.googlesample.com/upcoming-trips" />
+    </action>
+    <entity-set entitySetId="FeatureEntitySet">
+        <entity
+            name="Upcoming Trips"
+            alternateName="@array/upcoming_trips_synonyms"
+            url="https://mi.googlesample.com/upcoming-trips" />
+        <entity
+            name="Ongoing Trips"
+            alternateName="@array/ongoing_trips_synonyms"
+            url="https://mi.googlesample.com/ongoing-trips" />
+        <entity
+            name="Completed Trips"
+            alternateName="@array/completed_trips_synonyms"
+            url="https://mi.googlesample.com/completed-trips" />
+    </entity-set>
+</actions>

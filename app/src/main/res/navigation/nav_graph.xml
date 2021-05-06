@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.mi.googleassitantsample.HomeFragment"
+        android:label="HomeFragment" >
+        <action
+            android:id="@+id/action_homeFragment_to_myTripsFragment"
+            app:destination="@id/myTripsFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/myTripsFragment"
+        android:name="com.mi.googleassitantsample.MyTripsFragment"
+        android:label="MyTripsFragment" >
+
+        <argument
+            android:name="tripType"
+            app:argType="string"
+            android:defaultValue="/upcoming-trips"/>
+
+        <deepLink
+            android:id="@+id/upcomingTripsDeeplink"
+            app:uri="https://mi.googlesample.com/upcoming-trips" />
+
+        <deepLink
+            android:id="@+id/ongoingTripsDeeplink"
+            app:uri="https://mi.googlesample.com/ongoing-trips" />
+
+        <deepLink
+            android:id="@+id/completedTripsDeeplink"
+            app:uri="https://mi.googlesample.com/completed-trips" />
+
+
+    </fragment>
+
+</navigation>
