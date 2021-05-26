@@ -4,13 +4,16 @@ App Actions let users launch specific features in your app using Google Assistan
 
 ![alt tag](https://github.com/Mindinventory/GoogleAssistantAppActionSample/blob/main/media/sample.gif)
 
-# For more understanding you can read this blog:
 
-https://medium.com/p/ae5de74887d2/edit
+# Read blog for more understanding:
+
+https://medium.com/mindful-engineering/google-assistant-app-actions-on-android-ae5de74887d2
+
 
 # LICENSE!
 
 https://github.com/Mindinventory/GoogleAssistantAppActionSample/blob/main/LICENSE
+
 
 # Let us know!
 
